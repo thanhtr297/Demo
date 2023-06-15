@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Cách 1
+    let str = prompt("Nhập mảng") /// 1 54 543 54 3 54 3
+  // ép chuỗi về mảng
+  let array = str.split(" ");
+  console.log(array)
+
+  // Cách 2
+  // let n = prompt("Nhập độ dài của mảng") // nhập độ dài của mảng
+  // let array = [] // tạo 1 mảng rỗng mới
+  // for(let i = 0; i<n; i++){ //
+  //   let a = prompt("Nhập phần tử thứ "+ i); // nhập từng tử 1
+  //   array.push(a); // thêm ptu vừa nhập vào mảng
+  // }
+  // console.log(array)
+  //
+  let x = prompt("Nhập số cần tìm")
+
+  // tìm
+  let flag = false
+  for(let i =0; i<array.length; i++){
+    if(array[i] === x){
+      flag = true
+    }
+  }
+  if(flag){
+    alert("Có trong mảng")
+  }
+  else {
+    alert("Không có trong mảng")
+  }
+</script>
+</body>
+</html>
